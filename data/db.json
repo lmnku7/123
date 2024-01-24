@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": "6512.32",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Scanner",
+      "price": "1512.32",
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "name": "Printer",
+      "price": "2512.32",
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "name": "USB25",
+      "price": "312.32",
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "name": "Iphone15",
+      "price": 10000,
+      "inStock": true
+    },
+    {
+      "name": "test",
+      "price": 25,
+      "inStock": true,
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": "6512.32",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Scanner",
+      "price": "1512.32",
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "name": "Printer",
+      "price": "2512.32",
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "name": "USB",
+      "price": "312.32",
+      "inStock": true
+    }
+  ]
+}

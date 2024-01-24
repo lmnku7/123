@@ -1,0 +1,27 @@
+<div class="container" *ngIf="productForm">
+  <div class="card">
+    <div class="card-header">
+      <h2>Edit Product</h2>
+    </div>
+    <div class="card-body">
+      {{productForm.value|json}}
+      <form [formGroup]="productForm"  (ngSubmit)="handleUpdateProduct()" >
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" formControlName="name"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Price</label>
+          <input type="number" class="form-control" formControlName="price"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">inStock</label>
+          <input type="checkbox" class="form-check" formControlName="inStock"/>
+        </div>
+        <button class="btn btn-outline-info">Update</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+

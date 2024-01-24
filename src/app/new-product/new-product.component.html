@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h2>Save Product</h2>
+    </div>
+    <div class="card-body">
+      {{productForm.value|json}}
+      <form [formGroup]="productForm" (ngSubmit)="handleSaveProduct()">
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" formControlName="name"/>
+        </div>
+        <div class="form-group">
+        <label class="form-label">Price</label>
+        <input type="number" class="form-control" formControlName="price"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">inStock</label>
+          <input type="checkbox" class="form-check" formControlName="inStock"/>
+        </div>
+        <button class="btn btn-outline-info">Save</button>
+      </form>
+    </div>
+  </div>
+
+</div>

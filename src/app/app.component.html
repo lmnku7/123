@@ -1,0 +1,38 @@
+<!--<nav class="p-3">
+  <ul class="nav nav-pills">
+    <li >
+      <button routerLink="/home" class="btn btn-outline-info ms-1">Home
+        <i class="bi bi-house"></i>
+      </button>
+    </li>
+    <li >
+      <button routerLink="/products" class="btn btn-outline-info ms-1">Products
+      <i class="bi bi-arrow-down-up"></i>
+      </button>
+    </li>
+    <li >
+      <button routerLink="/newProduct" class="btn btn-outline-info ms-1">New Products
+      <i class="bi bi-plus-circle"></i>
+      </button>
+    </li>
+  </ul>
+</nav>-->
+
+
+<nav class="p-3">
+  <ul class="nav nav-pills">
+    <li  *ngFor="let lien of listLien">
+      <button (click)="setCurrentLien(lien)"  routerLink="{{lien.route}}"
+      [class]=" lien==currentLien ? 'btn-info '
+                   : 'btn-outline-info ' "
+      class="btn ms-1"> {{lien.nom}}
+      <i class="bi {{lien.icon}}"></i>
+      </button>
+    </li>
+  </ul>
+</nav>
+
+
+<router-outlet>
+
+</router-outlet>

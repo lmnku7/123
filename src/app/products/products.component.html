@@ -1,0 +1,43 @@
+<div class="container-md p-2">
+  <div class="card">
+    <div class="card-header">
+      <h2>List of Product</h2>
+    </div>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>InStock</th>
+          <th></th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let prd of products">
+          <td>{{prd.name}}</td>
+          <td>{{prd.price}}</td>
+          <td>
+           <button  (click)="handleStockProduct(prd)"  class="btn btn-outline-info">
+             <i [class]="prd.inStock==true? 'bi bi-check':'bi bi-circle' "></i>
+           </button>
+          </td>
+          <td>
+            <button  (click)="handleDeleteProduct(prd)"  class="btn btn-outline-danger">
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+          <td>
+             <button (click)="handleUpdateProduct(prd)" class="btn btn-outline-success">
+               <i class="bi bi-pencil"></i>
+             </button>
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
